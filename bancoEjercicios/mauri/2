@@ -1,0 +1,44 @@
+
+\section{Enunciado}
+A continuaci\'on se muestran modelos de alerones de veh\'iculos que corren actualmente en la
+categor\'ia LMP1 del campeonato mundial de resistencia (WEC). (Por cuestiones de
+simplicidad se supone que los alerones se componen por un s\'olo plano)
+
+
+\begin{figure*}[htb]
+\centerline{\includegraphics[scale=.3]{./imagenes/lmp1.jpg}}
+\label{fg:figure1}
+\end{figure*}
+
+\vspace*{2em}
+
+
+Para que los autos sean admitidos en el campeonato (Y en cada carrera), deben pasar una
+serie de pruebas est\'aticas, que se encuentran detalladas en el reglamento t\'ecnico, y son
+llevadas a cabo por los organizadores. Estas pruebas incluyen desde medidas m\'inimas y
+m\'aximas de ciertos componentes hasta m\'axima energ\'ia utilizable por vuelta. A continuaci\'on
+se encuentra un extracto del reglamento en el que se detalla la prueba de carga en el aler\'on
+y se especifica el m\'aximo desplazamiento admitido.
+
+
+\begin{figure*}[htb]
+\centerline{\includegraphics[scale=.5]{./imagenes/lmp2.jpg}}
+\label{fg:figure1}
+\end{figure*}
+
+
+\vspace*{2em}
+
+La prueba consiste en la aplicaci\'on de una serie de cargas a trav\'es de 6 "pads" que ir\'an
+apoyados en el aler\'on y poseen una dimensi\'on de 200mm de ancho y 50% de la cuerda de
+largo. Cada uno aplica 400N sobre el aler\'on y se ubican a una distancia de 164mm, 452mm
+y 740mm hacia ambos lados respecto del eje longitudinal del veh\'iculo. El m\'aximo
+desplazamiento admitido en cualquier punto del aler\'on es de 15mm.
+
+Con los datos del aler\'on proporcionados por el departamento de estructuras determinar si
+el aler\'on es capaz de pasar la prueba est\'atica. El ancho del aler\'on es de 1880mm y posee
+un montante en cada extremo y uno central.
+\[E: 17\ GPa; I: 0.0000094296\ m^4\]
+\textbf{Determinar las condiciones de contorno y cantidad de polinomios de interpolaci\'on que crea apropiadas para modelar el problema. Justificar debidamente su elecci\'on.}
+
+\end{document}

@@ -1,0 +1,75 @@
+
+\section{Enunciado} 
+
+Se necesita aproximar la curva el\'astica del fuselaje del \textbf{AIRBUS A320 'D-ATRA'}, al momento de contacto de la rueda de nariz durante el aterrizaje como se muestra en la figura. Utilizar un criterio de aproximaci\'on igual o menor al $5 \%$ y, 2 grados de libertad \textbf{como m\'inimo}.
+
+\begin{figure*}[htb]
+\centerline{\includegraphics[scale=0.25]{./imagenes/aterrizado.jpg}}
+\caption{AIRBUS A320 'D-ATRA' en configuraci\'on de aterrizaje}
+\label{fg:figure1}
+\end{figure*}
+
+\subsection{Consideraciones aerodin\'amicas}
+\begin{itemize}
+\item El avi\'on se encuentra en condici\'on de equilibrio de las fuerzas actuantes.
+\item La sustentaci\'on y la resistencia total son cargas puntuales ubicadas en el centro aerodin\'amico ($CA$).
+\item \textbf{Todos los efectos} del estabilizador horizontal son despreciables.
+\item El aer\'odromo se encuentra a $2500\ m$ sobre el nivel del mar.
+\item Utilizar atm\'osfera est\'andar.
+\end{itemize}
+
+\subsection{Consideraciones estructurales}
+
+\begin{itemize}
+  \item La reacci\'on que el tren de nariz ejerce contra el fuselaje es un $15 \%$ de la que ejerce en el tren principal.
+\item La estructura posee simetr\'ia geom\'etrica e inercial con respecto al plano $X-Z$ y $Y-X$.
+  \item El eje neutro se encuentra en el centro de la secci\'on transversal del fuselaje.
+  \item Las deformaciones son relativamente peque\~nas.
+  \item Las deformaciones por corte son despreciables con respecto a las de tensi\'on-compresi\'on.
+  \item La estructura es homogenea e isotr\'opica, y se comporta de forma lineal a lo largo del fuselaje.
+  \item El peso de las plantas de poder se considera concentrado en el $CA$.
+  \item El peso de la aeronave est\'a distribuido senoidalmente en la estructura.
+  \item La longitud del fuselaje que actua estructuralmente comienza en la nariz y finaliza en el $CA$ del estabilizador horizontal.  
+  \item La rigidez el\'astica de las cubiertas del tren de aterrizaje \textbf{no es despreciable}.  
+\end{itemize}
+
+\par\vspace{\baselineskip}
+
+\subsubsection{Datos}
+
+\begin{tabular}{|l||l|l|l|}
+\hline
+Variable & Descripci\'on & Valor & Unidad\\
+\hline
+$V$ & Velocidad & 47.0162 & $\frac{m}{s}$ \\
+$\alpha$ & \'angulo de ataque & $0$ & $grados$ \\
+$\rho$ & Densidad del aire $2500\ m$ & 0.9555 & $\frac{Kg}{m^3}$ \\
+$C_L$ & Coeficiente de sustentaci\'on $\alpha=0^\circ$ & 0.6 & $-$ \\
+$C_D$ & Coeficiente de resistencia total $\alpha=0^\circ$ & 0.15 & $-$ \\
+$S_{ref}$ & Superficie alar de referencia & 122.4 & $m^2$ \\
+$g$ & Aceleraci\'on de la gravedad $ & 9.81 & $\frac{m}{s^2}$ \\
+$P_{m}$ & Masa de la planta de poder \textbf{IAE V2500} & 2404 & $Kg$ \\
+$AGW$ & Aircraft gross weight & 50200 & $Kg$ \\
+$E$ & Modulo de elasticidad \textbf{AL-7075} & $7.311924\ e^9$ & $\frac{Kgf}{m^2}$ \\
+$Ixx$ & Momento de inercia de la estructura & $61.97686\ e^{-4}$ & $m^4$ \\
+$K$ & Rigidez el\'astica de cada tren de aterrizaje & $190247$ & $\frac{Kgf}{m}$ \\
+$L_{f}$ & Longitud del fuselaje & 33.02 & $m$ \\
+$L_{1}$ & Longitud secci\'on 1 & 5.07 & $m$ \\
+$L_{3}$ & Longitud secci\'on 3 & 4.5 & $m$ \\
+$x_{ca}$ & Distancia al centro aerodin\'amico & 16.23 & $m$ \\
+$x_{ng}$ & Distancia al tren de nariz & 5.07 & $m$ \\
+$x_{tp}$ & Distancia al tren principal & 17.71 & $m$ \\
+$h_{ca}$ & Distancia desde el $CA$ hasta el eje neutro & 1.46 & $m$ \\
+$h_{m}$ & Distancia desde el eje de tracci\'on hasta el $CA$  & 1.36 & $m$ \\
+\hline
+\end{tabular}
+
+
+
+\par\vspace{\baselineskip}
+
+El \textbf{DATUM} se localiza en la nariz de fuselaje.
+
+
+
+\end{document}
