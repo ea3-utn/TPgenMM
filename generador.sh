@@ -10,13 +10,13 @@
 ##-------------------------------------------------------------------------------
 ##################### DECLARACIONES ########################
 
-declare -r nNac=$(ls -lB ./bancoEjercicios/nacho/ | tail -n +2 | wc -l)
+#declare -r nNac=$(ls -lB ./bancoEjercicios/nacho/ | tail -n +2 | wc -l)
 
 declare -r nMau=$(ls -lB ./bancoEjercicios/mauri/ | tail -n +2 | wc -l)
 
 declare -r nNic=$(ls -lB ./bancoEjercicios/nico/ | tail -n +2 | wc -l)
 
-let nac=1
+#let nac=1
 
 let mau=1
 
@@ -29,14 +29,14 @@ let numeroLinea=1
 	
 #@@@@@@@@@@@@@@@@@@ SCRIPT ##################################	
 
-echo "ALUMNO,EJERCICIO 1,EJERCICIO 2" >asignacionEjercicios.csv
+echo "ALUMNO,EJERCICIO" >asignacionEjercicios.csv
 
 while read line
 do
 
     ### Limita rango de variables
     
-    test "$nac" -gt "$nNac" && let nac=1
+    #test "$nac" -gt "$nNac" && let nac=1
 
     test "$mau" -gt "$nMau" && let mau=1
 
@@ -46,18 +46,18 @@ do
     cat ./db/planillaBase.tex | sed 's/ALUMNO/'"${line}"'/' >EngCalcPaper.tex
     
     
-    cat bancoEjercicios/nacho/${nac} >>EngCalcPaper.tex
+    #cat bancoEjercicios/nacho/${nac} >>EngCalcPaper.tex
 
 
     
     ### Interprete ayudantes
 
-    if [ $((numeroLinea%2)) -eq 0 ]
+    if [ $((numeroLinea%2)) -eq 1 ]
     then
 
 	cat bancoEjercicios/mauri/${mau} >>EngCalcPaper.tex
 
-	echo "${line},nacho ${nac},mauri ${mau}" >>asignacionEjercicios.csv
+	echo "${line},mauri ${mau}" >>asignacionEjercicios.csv
 	
 	let mau++
 
@@ -65,7 +65,7 @@ do
 	
 	cat bancoEjercicios/nico/${nic} >>EngCalcPaper.tex
 
-	echo "${line},nacho ${nac},nico ${nic}" >>asignacionEjercicios.csv
+	echo "${line},nico ${nic}" >>asignacionEjercicios.csv
 
 	let nic++
 	
@@ -73,8 +73,6 @@ do
     
     ### Adecuacion de variables
    
-    let nac++
-
     let numeroLinea++
 
     ## Post-procesamiento

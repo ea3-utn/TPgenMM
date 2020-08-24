@@ -1,44 +1,32 @@
 
+
 \section{Enunciado}
-A continuaci\'on se muestran modelos de alerones de veh\'iculos que corren actualmente en la
-categor\'ia LMP1 del campeonato mundial de resistencia (WEC). (Por cuestiones de
-simplicidad se supone que los alerones se componen por un s\'olo plano)
 
+El siguiente problema representa la bancada de motor de una aeronave bimotor turboh\'elice. La misma se encuentra equipada con motores Pratt & Whitney PW118 y una h\'elice Hamilton Sundstrand 14RF-9.
 
 \begin{figure*}[htb]
-\centerline{\includegraphics[scale=.3]{./imagenes/lmp1.jpg}}
+\centerline{\includegraphics[scale=.3]{./imagenes/mauri2.jpg}}
 \label{fg:figure1}
 \end{figure*}
 
 \vspace*{2em}
 
+El equipo de diseño le entrega los siguientes datos calculados de acuerdo a lo especificado por la norma FAR 25 - Subpart C: Structure, para la condici\'on de crucero: \\
 
-Para que los autos sean admitidos en el campeonato (Y en cada carrera), deben pasar una
-serie de pruebas est\'aticas, que se encuentran detalladas en el reglamento t\'ecnico, y son
-llevadas a cabo por los organizadores. Estas pruebas incluyen desde medidas m\'inimas y
-m\'aximas de ciertos componentes hasta m\'axima energ\'ia utilizable por vuelta. A continuaci\'on
-se encuentra un extracto del reglamento en el que se detalla la prueba de carga en el aler\'on
-y se especifica el m\'aximo desplazamiento admitido.
+\begin{itemize}
+\item Cargas verticales: 10915 N
+\item Tracci\'on: 13248 N
+\end{itemize}
 
+Con los datos de la estructura y de cargas, calcule los desplazamientos de todos los nodos de la bancada para la condici\'on propuesta. El material a utilizar es ca\~no de $1\ \frac{7}{8}$'' y 0.083" de espesor, SAE4130. (Ver tabla adjunta)
+
+\vspace{3em}
+
+\textbf{Nota}: Considerar que las cargas se reparten de forma equivalente en cada nodo. Expresar los resultados en el SI.
 
 \begin{figure*}[htb]
-\centerline{\includegraphics[scale=.5]{./imagenes/lmp2.jpg}}
+\centerline{\includegraphics[scale=.5]{./imagenes/mauri2b.jpg}}
 \label{fg:figure1}
 \end{figure*}
-
-
-\vspace*{2em}
-
-La prueba consiste en la aplicaci\'on de una serie de cargas a trav\'es de 6 "pads" que ir\'an
-apoyados en el aler\'on y poseen una dimensi\'on de 200mm de ancho y 50% de la cuerda de
-largo. Cada uno aplica 400N sobre el aler\'on y se ubican a una distancia de 164mm, 452mm
-y 740mm hacia ambos lados respecto del eje longitudinal del veh\'iculo. El m\'aximo
-desplazamiento admitido en cualquier punto del aler\'on es de 15mm.
-
-Con los datos del aler\'on proporcionados por el departamento de estructuras determinar si
-el aler\'on es capaz de pasar la prueba est\'atica. El ancho del aler\'on es de 1880mm y posee
-un montante en cada extremo y uno central.
-\[E: 17\ GPa; I: 0.0000094296\ m^4\]
-\textbf{Determinar las condiciones de contorno y cantidad de polinomios de interpolaci\'on que crea apropiadas para modelar el problema. Justificar debidamente su elecci\'on.}
 
 \end{document}
